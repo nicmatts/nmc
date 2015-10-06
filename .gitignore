@@ -1,0 +1,7 @@
+*.pyc
+settings.py
+db.sqlite3
+static/CACHE/css/*
+media/*
+*/static/img/*
+articles/static/articles/static/img/*
