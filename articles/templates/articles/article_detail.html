@@ -10,7 +10,7 @@
 
     <p>Published on {{ article.pub_date }} by Nicole Mattson</p>
 
-    {% if article.tag.count > 0 %}
+    {% if article.tag %}
         Tags: 
         {% for tag in article.tag.all %}
             {{ tag.name }}
