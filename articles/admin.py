@@ -4,7 +4,7 @@ from .models import Article, Tag
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('title',)
+    list_display = ('title', 'pub_date',)
     prepopulated_fields = {"slug": ("title",)}
 
 

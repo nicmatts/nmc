@@ -7,7 +7,7 @@ from .models import Article
 class ArticleForm(ModelForm):
     class Meta:
         model = Article
-        fields = ['title', 'body']
+        fields = ['title', 'body', 'slug', 'tag',]
 
     def save(self):
         instance = super(ArticleForm, self).save(commit=False)
