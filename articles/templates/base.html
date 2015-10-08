@@ -62,18 +62,19 @@
 
         <div class="container" style="margin-top: 3em;">
             <div class="row">
-
-                {% block body %}
-                
-                            
-                {% endblock body %}
+                <div class="col-md-6 col-md-offset-2">
+                    {% block body %}
+                    
+                                
+                    {% endblock body %}
+                </div>
             </div>
 
             <footer class="footer clearfix">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <p>&copy; 2015 Nicole Mattson</p>
+                        <p>&copy; 2015 <a href="mailto:nicole@nicolemattsonconsulting.com">Nicole Mattson</a></p>
                         <ul class="list-inline social-icons">
                             <li><a href="https://www.linkedin.com/profile/view?id=AAMAAAD9JQMB25sg-jpASW20XeQ71QpZ73DJRrw&trk=hp-identity-name"><img src="{% static 'articles/static/img/linkedin.png' %}"></a></li>
                             <li><a href="https://github.com/nicmatts?tab=repositories"><img src="{% static 'articles/static/img/github.png' %}"></a></li>

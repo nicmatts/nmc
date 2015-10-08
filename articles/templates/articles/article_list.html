@@ -8,12 +8,14 @@
 
     Get my tips on effective website content, high-performing white papers, and more.
 
-    {% if article_list %} 
+    {% if article_list.published.count > 0 %} 
         {% for article in article_list %} 
             {% if article.published %}
                 <p><a href="{% url 'article_detail' article.slug %}" class="link-list">{{ article.title|title }}</p></a>
             {% endif %}
         {% endfor %}
+    {% else %}
+        <p>Tips are coming soon!</p>
     {% endif %}
 
 
