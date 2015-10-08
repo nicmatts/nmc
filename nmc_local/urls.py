@@ -11,7 +11,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
     url(r'^panel/', include(admin.site.urls)),
     #url(r'^contact/$', views.contact, name='contact'),
-    #url(r'^tips/', include('articles.urls'), name='articles'),
+    url(r'^tips/', include('articles.urls'), name='articles'),
     #url(r'^contact/$', views.contact, name='contact'),
     #url(r'^about/$', views.flatpage, {'url': '/about/'}, name='about'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -12,4 +12,3 @@ class ListArticles(ListView):
 class ArticleDetail(DetailView):
     model = Article
     lookup_field = 'slug'
-
