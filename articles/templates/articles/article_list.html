@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ block.super }} | Tips{% endblock title %}
+
+{% block body %}
+
+    <h1>Article List</h1>
+
+    {% if article_list %} 
+        {% for article in article_list %} 
+            <p><a href="{% url 'article_detail' article.slug %}" class="link-list">{{ article.title }}</p></a>
+        {% endfor %}
+    {% endif %}
+
+
+
+{% endblock body %}
