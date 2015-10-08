@@ -19,6 +19,7 @@ class Article(models.Model):
     # updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     slug = models.SlugField(unique=True)
     author = models.ForeignKey(User, default=1)
+    published = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.title

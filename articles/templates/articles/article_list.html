@@ -4,11 +4,15 @@
 
 {% block body %}
 
-    <h1>Article List</h1>
+    <h1>Tips</h1>
+
+    Get my tips on effective website content, high-performing white papers, and more.
 
     {% if article_list %} 
         {% for article in article_list %} 
-            <p><a href="{% url 'article_detail' article.slug %}" class="link-list">{{ article.title }}</p></a>
+            {% if article.published %}
+                <p><a href="{% url 'article_detail' article.slug %}" class="link-list">{{ article.title|title }}</p></a>
+            {% endif %}
         {% endfor %}
     {% endif %}
 
