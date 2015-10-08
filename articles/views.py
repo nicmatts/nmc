@@ -1,3 +1,15 @@
-from django.shortcuts import render
+from django.core.urlresolvers import reverse_lazy
 
-# Create your views here.
+from .models import Article
+
+from vanilla import CreateView, DeleteView, ListView, UpdateView, DetailView
+
+
+class ListArticles(ListView):
+    model = Article
+
+
+class ArticleDetail(DetailView):
+    model = Article
+    lookup_field = 'slug'
+
