@@ -414,8 +414,9 @@ button.trigger span::before {
     color: #121212;
     display: block;
     overflow: hidden;
-    padding: 5em 0;
+    padding: 2em 0 5em 0;
     position: relative;
+    margin-top: 3em;
 }
 
 .back-to-top{color:#858e97;font-size:31px;}
@@ -465,7 +466,7 @@ textarea.form-control {
     margin-bottom:20px;
 }
 .form-control:focus {
-  border-color: #ffd4be;
+  /*border-color: #ffd4be;*/
   outline: 0;
     box-shadow: none;
 }
@@ -902,7 +903,7 @@ color:#ffd4be;
 .navbar-default .navbar-nav > li > a {
    color: #121212;
     font-family: "Playfair Display",serif;
-    font-size:16px;
+    font-size:20px;
 }
 .logo-wrapper {
     text-align:center}
@@ -956,4 +957,8 @@ color:#ffd4be;
 .logo-wrapper p {
     font-size:1.1em !important;
 }
+}
+
+p.subline {
+    margin: 2em 0;
 }
