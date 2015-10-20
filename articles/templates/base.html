@@ -12,6 +12,11 @@
     <link rel="stylesheet" type="text/css" href="http://bootswatch.com/cosmo/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="{% static 'articles/static/css/custom.css' %}" />
     <link type="text/css" href="{% static 'articles/static/css/jollyicons.css' %}" rel="stylesheet">
+    <meta name="description" content="I write website content and white papers for software and web developers.">
+    <meta name="keywords" content="content writer, write paper writer, freelance writer">
+    <meta name="author" content="Nicole Mattson">
+    
+    <link rel="favicon" type="image/png" src="articles/static/articles/static/img/favicon.png" >
 
 {% endblock bootstrap3_extra_head %}
 
@@ -29,7 +34,7 @@
 <div class="logo-wrapper">
             <h1><a href="/">Nicole Mattson Consulting</a></h1>
              <img src="{% static 'articles/static/img/nmc.png' %}" style="max-width: 200px">
-            <p class="subline">I write white papers and website content for software and web developers.</p>
+            <p class="subline">I write <strong>website content</strong> for software and web developers.</p>
         </div>
 
         <div id="normal-header" class="container-fluid">
@@ -43,7 +48,7 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
+                        <!-- <li><a href="/about">About</a></li> -->
                         <li><a href="/contact">Contact</a></li>
                         <li><a href="/tips">Tips</a></li>
                        <!--  <li class="dropdown">
@@ -62,7 +67,7 @@
 
         <div class="container" style="margin-top: 3em;">
             <div class="row">
-                <div class="col-md-6 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2">
                     {% block body %}
                     
                                 
